@@ -1,4 +1,3 @@
-import { RedirectType } from "next/navigation"
 
 
 const Signup= ()=>{
