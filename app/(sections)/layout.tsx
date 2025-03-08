@@ -1,7 +1,11 @@
+import React from "react";
 
-const Layout= ()=>{
-    return(
+const Layout= ({children}:{children:React.ReactNode})=>{
+    return(<>
         <div>Layout inside section</div>
+        {children}
+        </>
+        
     )
 }
 
