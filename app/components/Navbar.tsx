@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <div className="w-full bg-black shadow text-white pt-3 pb-3">
-            <nav className="max-w-6xl mx-auto flex items-center">
+            <nav className="max-w-6xl mx-auto flex items-center px-30">
                 <ul className="flex space-x-6">
                     <li><a href="/">Home</a></li>
                     <li><a href="/projects">Projects</a></li>
