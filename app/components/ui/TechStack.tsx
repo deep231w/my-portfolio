@@ -16,8 +16,8 @@ const tools = [
 
 export default function TechStack() {
   return (
-    <div className="mt-10 text-center">
-      <h2 className="text-xl font-bold mb-4 text-white">Tools that I have used</h2>
+    <div className="mt-10 text-center w-full max-w-6xl mx-auto px-20">
+      <h2 className="text-xl font-bold mb-4 text-white flex items-left">Tools that I have used</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {tools.map((tool, index) => (
           <motion.div

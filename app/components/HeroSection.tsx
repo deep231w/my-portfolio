@@ -1,7 +1,7 @@
 
 export default function(){
     return (
-        <section className="flex text-white w-full max-w-6xl items-center justify-between mx-auto px-8 ">
+        <section className="flex text-white w-full max-w-6xl items-center justify-between mx-auto px-20 ">
             <div>
                 <div><h1>Hey there! I’m <b>Deepak</b>👋</h1></div>
                 <div>
