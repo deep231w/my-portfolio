@@ -11,10 +11,10 @@ export default function(){
                 </div>
                 <ul className="px-2">
                     <div>💡 What I bring to the table:</div>
-                    <li>- Proficiency in Next.js, React, TypeScript, Prisma, and Firebase</li>
-                    <li>- Strong backend skills with Node.js and databases (PostgreSQL, MongoDB)</li>
-                    <li>- Open-source contributions and collaboration with developers worldwide</li>
-                    <li>- Interest in DSA (C++), system design, and scalable architectures</li>
+                    <li>  Proficiency in Next.js, React, TypeScript, Prisma, and Firebase</li>
+                    <li>  Strong backend skills with Node.js and databases (PostgreSQL, MongoDB)</li>
+                    <li>  Open-source contributions and collaboration with developers worldwide</li>
+                    <li>  Interest in DSA (C++), system design, and scalable architectures</li>
                 </ul>
             </div>
             
