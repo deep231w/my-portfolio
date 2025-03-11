@@ -3,7 +3,7 @@ const Navbar = () => {
         <div className="w-full bg-black text-white py-4 shadow">
             <nav className="max-w-6xl mx-auto flex items-center justify-between px-8">
                 {/* Logo */}
-                <div className="text-2xl font-bold">A</div>
+                <div className="text-2xl font-bold">D</div>
 
                 {/* Navigation Links */}
                 <ul className="flex space-x-8 text-lg">
