@@ -1,7 +1,7 @@
 
 const About= ()=>{
     return(
-        <div>ABout section</div>
+        <div>working on it. ...</div>
     )
 }
 
