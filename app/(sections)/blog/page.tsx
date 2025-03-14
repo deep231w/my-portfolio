@@ -1,8 +1,9 @@
 
-const About= ()=>{
+export default function (){
     return(
-        <div>working on it. ...</div>
-    )
+        <div className="flex justify-center items-center text-white">
+            <h1 className="text-lg">Working on it ......</h1>
+        </div>
+    );
 }
 
-export default About;
