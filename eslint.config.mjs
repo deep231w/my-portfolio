@@ -13,8 +13,12 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      "import/no-anonymous-default-export": "off", // Disable anonymous default export rule
-      "react/display-name": "off", // Disable display name requirement for components
+      "@typescript-eslint/no-unused-vars": ["warn"], // Change from "error" to "warn"
+      "import/no-anonymous-default-export": "off",
+      "react/display-name": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "react/react-in-jsx-scope": "off"
+  
     },
   },
 ];

@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 export default function(){
     return (
         <section className="flex text-white w-full max-w-6xl items-center justify-between mx-auto px-20 ">
@@ -11,7 +11,7 @@ export default function(){
                     I thrive on building innovative solutions, contributing to the developer community, and constantly learning new technologies.
                 </div>
                 <ul className="px-2">
-                    <div>💡 What I bring to the table:</div>
+                    <div>What I bring to the table:</div>
                     <li>  Proficiency in Next.js, React, TypeScript, Prisma, and Firebase</li>
                     <li>  Strong backend skills with Node.js and databases (PostgreSQL, MongoDB)</li>
                     <li>  Open-source contributions and collaboration with developers worldwide</li>
@@ -20,7 +20,7 @@ export default function(){
             </div>
             
             <div>
-                <img src="IMG_20231025_215552_679.jpg" alt="profilepic" className="w-64 h-auto rounded-lg shadow-lg" />
+                <Image src="IMG_20231025_215552_679.jpg" alt="profilepic" className="w-64 h-auto rounded-lg shadow-lg" />
             </div>
         </section>
     );
