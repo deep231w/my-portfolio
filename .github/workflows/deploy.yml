@@ -28,7 +28,7 @@ jobs:
           ssh $SERVER_USER@$SERVER_HOST << 'EOF'
             cd ~/my-portfolio
             git pull origin main
-            npm install --production
+            npm install
             npm run build
-            pm2 restart portfolio --no-watch
+            pm2 restart portfolio
           EOF
