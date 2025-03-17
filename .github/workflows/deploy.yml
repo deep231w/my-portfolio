@@ -16,7 +16,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SERVER_USER: ubuntu
-          SERVER_HOST: 65.1.100.43
+          SERVER_HOST: 3.110.122.11
         run: |
           # Add SSH key
           mkdir -p ~/.ssh
