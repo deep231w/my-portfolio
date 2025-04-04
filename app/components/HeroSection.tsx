@@ -23,5 +23,5 @@ export default function(){
                 <Image src="/IMG_20231025_215552_679.jpg" alt="profilepic" className="w-64 h-auto rounded-lg shadow-lg" width={500} height={300}/>
             </div>
         </section>
-    );
+    ); 
 }
