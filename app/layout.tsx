@@ -10,11 +10,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Container
           maxWidth="lg"
+          
           sx={{
             px: {
               xs: 1,
               sm: 1,
-              md: 10, // spacing on >= 900px
+              md: 20, // spacing on >= 900px
             },
           }}
 

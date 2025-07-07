@@ -1,38 +1,54 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { SiTypescript, SiPrisma, SiPostgresql, SiFirebase } from "react-icons/si";
 
 const tools = [
-  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-  { name: "Python", icon: <FaPython className="text-yellow-400" /> },
-  { name: "React", icon: <FaReact className="text-blue-400" /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
-  { name: "Prisma", icon: <SiPrisma className="text-gray-400" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
-  { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
+  { name: "Node.js", icon: <FaNodeJs size={20} color="#68A063" /> },
+  { name: "Python", icon: <FaPython size={20} color="#FFD43B" /> },
+  { name: "React", icon: <FaReact size={20} color="#61DBFB" /> },
+  { name: "TypeScript", icon: <SiTypescript size={20} color="#007ACC" /> },
+  { name: "Prisma", icon: <SiPrisma size={20} color="#A0AEC0" /> },
+  { name: "PostgreSQL", icon: <SiPostgresql size={20} color="#336791" /> },
+  { name: "Firebase", icon: <SiFirebase size={20} color="#FFCB2B" /> },
 ];
 
 export default function TechStack() {
   return (
-    <div className="mt-10 text-center w-full max-w-6xl mx-auto px-20">
-      <h2 className="text-xl font-bold mb-4 text-white flex items-left">Tools that I have used</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <Box>
+      <Box sx={{ textAlign: "center" }}>
+        <Typography variant="h5" gutterBottom>Tech Stack</Typography>
+      </Box>
+      <Grid container sx={{
+        
+        
+        gap: 3,
+        // Responsive gridColumn spans:
+        
+      }}
+ justifyContent="center">
         {tools.map((tool, index) => (
-          <motion.div
-            key={tool.name}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-white"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-            whileHover={{ scale: 1.1 }}
+          <Grid
+            key={index}
           >
-            {tool.icon}
-            <span>{tool.name}</span>
-          </motion.div>
+            <Button
+              variant="outlined"
+              sx={{ display: 'flex', alignItems: 'center', gap: 1, borderRadius:"60px" ,  height:"36px",textTransform: "none","&.Mui-disabled": {
+      color: "#000",        // override disabled gray
+      borderColor: "#000",  // override border too
+      opacity: 1,           // keep full visibility
+      pointerEvents: "none", // still prevents interaction
+    },
+}}
+              size="small"
+              disabled
+            >
+{tool.icon}
+              <Typography variant="subtitle2">{tool.name}</Typography>
+            </Button>
+            
+          </Grid>
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Box>
   );
 }

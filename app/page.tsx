@@ -1,6 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import TechStack from "./components/TechStack";
-import GitStats from "./components/ui/GitStats";
+import GitStats from "./components/GitStats";
 import ProjectCards from "./components/ProjectCards";
 import ContactMe from "./components/ContactMe";
 export default function Home() {

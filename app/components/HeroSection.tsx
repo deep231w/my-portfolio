@@ -10,13 +10,13 @@ export default function(){
             <Typography variant="h5" color="white">
                 Hey there! I’m Deepak
             </Typography>
-            <Typography variant="body1" color="white">
+            <Typography variant="body1" >
                 A passionate <b>Softwate Engineer</b>,
                 open-source contributor, 
                 and tech enthusiast who loves turning ideas into reality with clean, scalable code.
                 I thrive on building innovative solutions, contributing to the developer community, and constantly learning new technologies.
             </Typography>
-            <Box sx={{color: 'white' }}>
+            <Box >
                 <Typography variant="h6" gutterBottom>
                     What I bring to the table:
                 </Typography>
