@@ -4,7 +4,7 @@ import GitHubCalendar from "react-github-calendar";
 
 export default function () {
   return (
-    <Box>
+    <Box py={3}>
       <GitHubCalendar
         username="deep231w"
         blockSize={13}  // Increases the size of contribution squares
