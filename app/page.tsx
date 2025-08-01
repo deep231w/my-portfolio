@@ -1,7 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import TechStack from "./components/TechStack";
 import GitStats from "./components/GitStats";
-import ProjectCards from "./components/ProjectCards";
+import ProjectSection from "./components/ProjectSection";
 import ContactMe from "./components/ContactMe";
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <TechStack />
       <GitStats />
-      <ProjectCards/>
+      <ProjectSection/>
       <ContactMe/>
     </div>
   );

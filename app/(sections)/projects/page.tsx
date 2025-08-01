@@ -1,4 +1,4 @@
-import ProjectCards from "@/app/components/ProjectCards"
+import ProjectCards from "@/app/components/ProjectSection"
 export default function(){
     return (
         <div>
