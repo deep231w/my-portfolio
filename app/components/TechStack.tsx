@@ -34,7 +34,7 @@ export default function TechStack() {
               variant="outlined"
               sx={{ display: 'flex', alignItems: 'center', gap: 1, borderRadius:"60px" ,  height:"36px",textTransform: "none","&.Mui-disabled": {
       color: "#000",        // override disabled gray
-      borderColor: "#000",  // override border too
+      borderColor: "white",  // override border too
       opacity: 1,           // keep full visibility
       pointerEvents: "none", // still prevents interaction
     },
@@ -43,7 +43,7 @@ export default function TechStack() {
               disabled
             >
 {tool.icon}
-              <Typography variant="subtitle2">{tool.name}</Typography>
+              <Typography variant="subtitle2" color="white">{tool.name}</Typography>
             </Button>
             
           </Grid>

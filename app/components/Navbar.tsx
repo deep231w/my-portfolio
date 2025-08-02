@@ -18,16 +18,16 @@ const Navbar = () => {
             >
                 <Link href={"/"}>
                     <Typography
-                        
+                        color="white"
                     >
                         Home
                     </Typography>
                 </Link>
                 <Link href={"/projects"}>
-                    <Typography >Projects</Typography>    
+                    <Typography color="white">Projects</Typography>    
                 </Link>
                 <Link href={"/blog"}>
-                    <Typography >Blog</Typography>
+                    <Typography color="white">Blog</Typography>
                 </Link>
             </Paper>
         </Box>

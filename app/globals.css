@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 *{
-    background: hsl(0, 0%, 100%);
+    background: hsl(246, 100%, 2%);
 }
 
 /* @font-face {
@@ -26,6 +26,7 @@
   body {
     font-family: 'Fira Code', monospace;
     font-weight: 20;
+    color: white; 
   }
 
   :root {
