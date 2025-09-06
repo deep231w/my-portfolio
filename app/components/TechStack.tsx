@@ -19,13 +19,10 @@ export default function TechStack() {
         <Typography variant="h5" gutterBottom>Tech Stack</Typography>
       </Box>
       <Grid container sx={{
-        
-        
         gap: 3,
         // Responsive gridColumn spans:
-        
       }}
- justifyContent="center">
+        justifyContent="center">
         {tools.map((tool, index) => (
           <Grid
             key={index}
@@ -33,16 +30,16 @@ export default function TechStack() {
             <Button
               variant="outlined"
               sx={{ display: 'flex', alignItems: 'center', gap: 1, borderRadius:"60px" ,  height:"36px",textTransform: "none","&.Mui-disabled": {
-      color: "#000",        // override disabled gray
-      borderColor: "white",  // override border too
-      opacity: 1,           // keep full visibility
-      pointerEvents: "none", // still prevents interaction
-    },
-}}
+                color: "#000",        // override disabled gray
+                borderColor: "white",  // override border too
+                opacity: 1,           // keep full visibility
+                pointerEvents: "none", // still prevents interaction
+              },
+              }}
               size="small"
               disabled
             >
-{tool.icon}
+              {tool.icon}
               <Typography variant="subtitle2" color="white">{tool.name}</Typography>
             </Button>
             
