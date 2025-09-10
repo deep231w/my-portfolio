@@ -147,4 +147,8 @@
     @apply bg-background text-foreground;
     }
 }
-  
+
+.cat-img{
+  width: auto;
+  height: 400px;
+}
