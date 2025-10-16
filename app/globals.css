@@ -7,6 +7,12 @@ body {
   background: hsl(245, 92%, 5%);
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+}
+
 
 /* @font-face {
     font-family: 'JetBrains Mono';

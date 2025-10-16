@@ -10,34 +10,35 @@ export default function(){
             <Typography variant="h5" color="white">
                 Hey there! I’m Deepak
             </Typography>
-            <Typography variant="body1" >
-                A passionate <b>Softwate Engineer</b>,
-                open-source contributor, 
-                and tech enthusiast who loves turning ideas into reality with clean, scalable code.
-                I thrive on building innovative solutions, contributing to the developer community, and constantly learning new technologies.
-            </Typography>
+            <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.8 }}>
+            I’m a passionate <b>Full Stack Developer</b> who loves building
+            responsive, high-performance web applications using
+            <b> React.js, Next.js, Node.js,</b> and <b>Prisma</b>. 
+            I focus on writing clean, maintainable code and creating smooth, engaging user experiences.
+          </Typography>
             <Box >
                 <Typography variant="h6" gutterBottom>
-                    What I bring to the table:
-                </Typography>
-                <List sx={{ listStyleType: 'disc', pl: 4 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        Proficiency in Next.js, React, TypeScript, Prisma, and Firebase
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        Strong backend skills with Node.js and databases (PostgreSQL, MongoDB)
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        Open-source contributions and collaboration with developers worldwide
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        Interest in DSA (C++), system design, and scalable architectures
-                    </ListItem>
-                </List>
+              Tech I work with:
+            </Typography>
+            <List sx={{ listStyleType: "disc", pl: 4 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                Frontend: React.js, Next.js, Tailwind CSS, Material UI
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                Backend: Node.js, Express.js, Prisma, PostgreSQL, MongoDB
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                Tools & Others: Docker, AWS, GitHub, CI/CD, JWT Auth
+              </ListItem>
+            </List>
             </Box>
         </Grid>
 
-        <Grid>
+        <Grid
+            sx={{
+                display: { xs: "none", md: "block" }, 
+            }}
+        >
             <Box alignContent={"center"} padding={2}>
                 <Image 
                     style={{ borderRadius: "8px" }}
@@ -54,27 +55,3 @@ export default function(){
     </Box>
     ); 
 }
-
-
-{/* <section className="flex text-white w-full max-w-6xl items-center justify-between mx-auto px-20 ">
-            <div>
-                <div><h1>Hey there! I’m <b>Deepak</b>👋</h1></div>
-                <div>
-                    A passionate <b>Softwate Engineer</b>,
-                    open-source contributor, 
-                    and tech enthusiast who loves turning ideas into reality with clean, scalable code.
-                    I thrive on building innovative solutions, contributing to the developer community, and constantly learning new technologies.
-                </div>
-                <ul className="px-2">
-                    <div>What I bring to the table:</div>
-                    <li>  Proficiency in Next.js, React, TypeScript, Prisma, and Firebase</li>
-                    <li>  Strong backend skills with Node.js and databases (PostgreSQL, MongoDB)</li>
-                    <li>  Open-source contributions and collaboration with developers worldwide</li>
-                    <li>  Interest in DSA (C++), system design, and scalable architectures</li>
-                </ul>
-            </div>
-            
-            <div>
-                <Image src="/IMG_20231025_215552_679.jpg" alt="profilepic" className="w-64 h-auto rounded-lg shadow-lg" width={500} height={300}/>
-            </div>
-        </section> */}

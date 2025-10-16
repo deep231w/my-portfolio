@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function ContactMe() {
   return (
     <section className="text-white flex flex-col items-center justify-center py-20">
-      <h1 className="text-l font-bold mb-2">Contact Me:</h1>
+      <h1 className="text-l font-bold mb-2">Socials:</h1>
       <div className="flex gap-6 text-xl">
         <a
           href="https://github.com/deep231w"

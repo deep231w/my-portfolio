@@ -51,11 +51,13 @@ export default function ProjectsSection() {
 
       <Box
         sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          gap: 0, 
-        }}
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: { xs: "center", sm: "center", md: "space-between" },
+    alignItems: "center",
+    gap: 3,
+  }}
+
       >
           {projects.map((p)=>(
             
