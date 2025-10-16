@@ -42,7 +42,7 @@ export default function(){
             <Box alignContent={"center"} padding={2}>
                 <Image 
                     style={{ borderRadius: "8px" }}
-                    src="/IMG_20231025_215552_679.jpg" 
+                    src="/deep.jpg" 
                     alt="profilepic"  
                     width={400} 
                     height={300}
