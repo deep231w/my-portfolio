@@ -1,25 +1,75 @@
+"use client";
 import { Box, Typography } from "@mui/material";
+import Project from "./Project";
 
-export default function (){
-    return (
-        <Box>
-            <Box textAlign={"center"}>
-                <Typography
-                    variant="h5"    
-                >
-                    Projects
-                </Typography>
-            </Box>
-        </Box>
-    );
+type ProjectData = {
+  id: string;
+  title?: string;
+  description?: string;
+  image?: string;
+  liveUrl?: string;
+  gitUrl?: string;
+};
+
+const projects:ProjectData[]=[
+    {
+        id:"1",
+        title:"Chat app",
+        description:"A real time chatt application , using websocket , firebase auth , prostgress DB ,react , nodejs",
+        image:"/chat.png",
+        liveUrl:"",
+        gitUrl:"https://github.com/deep231w/ChatApp"
+    },
+    {
+        id:"2",
+        title:"Payment app",
+        description:"Its has p2p money transfer and can add money from bank (not real but it has a webhook to confirm add money ) . The tech stack is monorepo ,  nextJs , Oauth as Authentication,  and nodejs.",
+        image:"/paymentApp.png",
+        liveUrl:"",
+        gitUrl:"https://github.com/deep231w/payment-app"
+    },
+    {
+        id:"3",
+        title:"Garage  management",
+        description:"A full-stack garage and parking management app with admin and user panels. Admins can create floors, slots, and assign reservations. Users can view available slots, park vehicles, and view parking history. Email alerts are sent via Nodemailer for parking and departure events.",
+        image:"/garage.png",
+        liveUrl:"",
+        gitUrl:"https://github.com/deep231w/garage-management"
+    }
+]
+
+export default function ProjectsSection() {
+
+
+  return (
+    <Box sx={{  }}>
+      <Box textAlign="center" mb={4}>
+        <Typography variant="h5" fontWeight={600}>
+          Projects
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          gap: 0, 
+        }}
+      >
+          {projects.map((p)=>(
+            
+            <Project
+                key={p.id}
+                title={p.title ||""}
+                description={p.description || ""}
+                liveLink={p.liveUrl || ""}
+                gitHub={p.gitUrl || ""}
+                imageUrl={p.image || ""}
+            />
+          ))}
+
+      </Box>
+    </Box>
+  );
 }
-
-
-{/* <div className="text-white border-white w-full max-w-6xl items-center justify-between mx-auto px-20">
-            <div>Projects</div>
-            <div className="grid grid-cols-2 gap-4 pb-2">
-                <ThreeDCardDemo header="Payment App" content="Payment application which has features like p2p transaction" liveLink="Live" githubLink="Github Repo"image="/Screenshot 2024-10-22 001849.png"/>
-                <ThreeDCardDemo header="DeepBox" content="Code execution platform " liveLink="Live" githubLink="Github Repo" image="/Screenshot 2025-03-13 192922.png"/>
-                <ThreeDCardDemo header="ChatApp" content="Real time chat application using websocket" liveLink="Live" githubLink="GitHub Repo" image="/Screenshot 2025-02-28 102635.png"/> 
-            </div>
-        </div> */}

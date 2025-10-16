@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       
       <body>
-        {/* <Container
+        <Container
           maxWidth="lg"
           
           sx={{
@@ -18,12 +18,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               md: 20, // spacing on >= 900px
             },
           }}
-
         >
           <Navbar/>
           {children}
-        </Container> */}
-        {children}
+        </Container>
       </body>
       
     </html>

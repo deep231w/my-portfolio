@@ -3,16 +3,16 @@ import TechStack from "./components/TechStack";
 import GitStats from "./components/GitStats";
 import ProjectSection from "./components/ProjectSection";
 import ContactMe from "./components/ContactMe";
-import MainTemp from "./components/temp/MainTemp";
+import Experience from "./components/Experience";
 export default function Home() {
   return (
     <div className="relative ">
-      {/* <HeroSection />
+      <HeroSection />
+      <Experience/>
       <TechStack />
       <GitStats />
       <ProjectSection/>
-      <ContactMe/> */}
-      <MainTemp/>
+      <ContactMe/>
     </div>
   );
 } 
