@@ -46,7 +46,7 @@ export default function Project({title,description, liveLink ,gitHub,imageUrl}:P
         </CardItem>
 
         <div className="flex justify-between items-center mt-20">
-          <CardItem
+          {/* <CardItem
             translateZ={20}
             as="a"
             href={`${liveLink}`}
@@ -54,7 +54,7 @@ export default function Project({title,description, liveLink ,gitHub,imageUrl}:P
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
             Live
-          </CardItem>
+          </CardItem> */}
 
           <CardItem
             translateZ={20}
