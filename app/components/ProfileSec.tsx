@@ -16,7 +16,7 @@ import NewContactSec from "./NewContact-Sec";
 export default function ProfileSec(){
     return(
         <div className="h-full w-full bg-black flex justify-center p-5">
-            <div className="pt-15 flex flex-col items-center gap-3">
+            <div className="pt-4 flex flex-col items-center gap-3">
                 <Image
                     style={{ borderRadius: "8px" }}
                     src="/Zenitsu-Pfp.jpg" 
