@@ -34,6 +34,26 @@ body {
     font-family: 'Fira Code', monospace;
     font-weight: 20;
     color: white; 
+    height: 100dvh;
+    width: 100vw;
+  }
+
+  /* grid container */
+  .grid-container{
+    padding: 2rem;
+    width: 100vw;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 4rem;
+    grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box5";
+  }
+  .item{
+    background-color: blue;
+    border-radius: 30px;
   }
 
   :root {
