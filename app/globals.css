@@ -66,6 +66,17 @@ body {
   border: 2px solid transparent;    
   color: white;
 }
+.input-sec {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  outline: none;
+}
+
+.input-sec:focus {
+  border-color: rgb(255, 255, 255);
+}
 
   :root {
     --background: oklch(1 0 0);

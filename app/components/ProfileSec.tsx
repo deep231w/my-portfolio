@@ -11,10 +11,11 @@ import CppIcon from "../icons/Cpp-Icon";
 import Cicon from "../icons/C-icon";
 import JsIcon from "../icons/Javascript-icon";
 import BorderForSkill from "./BorderForSkill";
+import NewContactSec from "./NewContact-Sec";
 
 export default function ProfileSec(){
     return(
-        <div className="h-full w-full bg-gray-700 flex justify-center p-5">
+        <div className="h-full w-full bg-black flex justify-center p-5">
             <div className="pt-15 flex flex-col items-center gap-3">
                 <Image
                     style={{ borderRadius: "8px" }}
@@ -74,7 +75,7 @@ export default function ProfileSec(){
                     <BorderForSkill icon={<Cicon className={"w-6 h-6 text-sky-400"}/>} label="C"/>                    
                 </div>
                 <div className="contact-sec">
-                    contact-sec
+                    <NewContactSec/>
                 </div>
             </div>
             
