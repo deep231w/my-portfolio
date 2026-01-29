@@ -1,6 +1,16 @@
 import Image from "next/image";
 import ReactIcon from "../icons/react-icon";
 import NextjsIcon from "../icons/Nextjs-icon";
+import NodejsIcon from "../icons/Nodejs-icon";
+import MongodbIcon from "../icons/Mongodb-icon";
+import PostgressIcon from "../icons/Postgress-icon";
+import Pythonicon from "../icons/Python-icon";
+import FastapiIcon from "../icons/FastApi-icon";
+import MysqlIcon from "../icons/MySql-icon";
+import CppIcon from "../icons/Cpp-Icon";
+import Cicon from "../icons/C-icon";
+import JsIcon from "../icons/Javascript-icon";
+import BorderForSkill from "./BorderForSkill";
 
 export default function ProfileSec(){
     return(
@@ -50,11 +60,24 @@ export default function ProfileSec(){
                 <div className="paragraph-bio flex items-center justify-center text-center">
                     <p className="text-sm max-w-md text-sm leading-relaxed text-white/40">Full-stack developer focused on building clean, scalable web apps. I work with React, Next.js, Node.js, and modern databases, and enjoy turning complex ideas into simple, user-friendly products with strong UI and solid architecture.</p>
                 </div>
-                <div className="skill-sec">
-                    <ReactIcon className={"w-6 h-6 text-sky-400"}/>
-                    <NextjsIcon className="w-6 h-6 text-sky-400"/>
+                <div className="skill-sec flex justify-center gap-2 pt-4 flex-wrap">
+                    <BorderForSkill icon={<JsIcon className={"w-5 h-5 text-sky-400"}/>} label="JavaScript"/>
+                    <BorderForSkill icon={<ReactIcon className={"w-6 h-6 text-sky-400"}/>} label="React"/>
+                    <BorderForSkill icon={<NextjsIcon className={"w-6 h-6 text-sky-400"}/>} label="NextJs"/>
+                    <BorderForSkill icon={<NodejsIcon className={"w-6 h-6 text-sky-400"}/>} label="NodeJs"/>
+                    <BorderForSkill icon={<MongodbIcon className={"w-6 h-6 text-sky-400"}/>} label="MongoDb"/>
+                    <BorderForSkill icon={<PostgressIcon className={"w-6 h-6 text-sky-400"}/>} label="Postgress"/>
+                    <BorderForSkill icon={<Pythonicon className={"w-6 h-6 text-sky-400"}/>} label="Python"/>
+                    <BorderForSkill icon={<MysqlIcon className={"w-6 h-6 text-sky-400"}/>} label="MySql"/>
+                    <BorderForSkill icon={<FastapiIcon className={"w-6 h-6 text-sky-400"}/>} label="FastApi"/>
+                    <BorderForSkill icon={<CppIcon className={"w-6 h-6 text-sky-400"}/>} label="C++"/>
+                    <BorderForSkill icon={<Cicon className={"w-6 h-6 text-sky-400"}/>} label="C"/>                    
+                </div>
+                <div className="contact-sec">
+                    contact-sec
                 </div>
             </div>
+            
         </div>
     )
 }
