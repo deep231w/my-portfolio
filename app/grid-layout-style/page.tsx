@@ -11,7 +11,11 @@ export default function GridLayoutStyle(){
             <div className="item" style={{gridArea:"box2"}}>
                 <ExperienceSec/>
             </div>
-            <div className="item" style={{gridArea:"box3"}}>item 3</div>
+            <div className="item box3 flex flex-col" style={{gridArea:"box3"}}>
+                <div className="sub-item">sub 1</div>
+                <div className="sub-item">sub 2</div>
+            </div>
+
             <div className="item" style={{gridArea:"box4"}}>item 4</div>
             <div className="item" style={{gridArea:"box5"}}>
                 <NewGitStats/>
