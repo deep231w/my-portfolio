@@ -88,6 +88,16 @@ body {
   background: rgba(255,255,255,0.05);
   border-radius: 20px;
 }
+
+.sub1{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap:1rem;
+}
+.set-sub{
+  background: rgba(194, 16, 16, 0.426);
+  border-radius: 20px;
+}
   :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
