@@ -5,11 +5,13 @@ import "../gitstats.css"; // your custom css
 
 export default function GitHubGraph() {
   return (
-    <Box py={3}>
+    <Box >
       <GitHubCalendar
         username="deep231w"
         hideColorLegend
         hideMonthLabels
+        blockSize={7.8}
+        blockMargin={0}
       />
     </Box>
   );

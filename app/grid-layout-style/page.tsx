@@ -16,11 +16,13 @@ export default function GridLayoutStyle(){
             <div className="item box3 flex flex-col" style={{gridArea:"box3"}}>
                 <div className="sub-item sub1">
                     <div className="set-sub">
-                        {/* <GitStats/> */}
+                        <div className="calendar-wrapper">
+                            <GitStats />
+                            </div>
                     </div>
-                    <div className="set-sub">
+                    {/* <div className="set-sub">
                         set sub2
-                    </div>
+                    </div> */}
                 </div>
                 <div className="sub-item">sub 2</div>
             </div>

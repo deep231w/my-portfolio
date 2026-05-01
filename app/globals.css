@@ -85,20 +85,37 @@ body {
   gap: 1rem;
 }
 .sub-item {
-  background: rgba(255,255,255,0.05);
+  /* background: rgba(255,255,255,0.05); */
   border-radius: 20px;
+
+
+  /* width: 100%;
+  height: 100%;
+  overflow: hidden;   
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+
 }
 
 .sub1{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns:  1fr;
   gap:1rem;
 }
 .set-sub{
-  background: rgba(194, 16, 16, 0.426);
   border-radius: 20px;
 }
 
+.calendar-wrapper {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
