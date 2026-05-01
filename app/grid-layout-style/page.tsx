@@ -1,6 +1,8 @@
 import ExperienceSec from "../components/Experience-sec";
+import GitStats from "../components/GitStats";
 import NewGitStats from "../components/NewGitStats";
 import ProfileSec from "../components/ProfileSec";
+
 
 export default function GridLayoutStyle(){
     return(
@@ -14,7 +16,7 @@ export default function GridLayoutStyle(){
             <div className="item box3 flex flex-col" style={{gridArea:"box3"}}>
                 <div className="sub-item sub1">
                     <div className="set-sub">
-                        set sub1
+                        {/* <GitStats/> */}
                     </div>
                     <div className="set-sub">
                         set sub2
@@ -25,7 +27,7 @@ export default function GridLayoutStyle(){
 
             <div className="item" style={{gridArea:"box4"}}>item 4</div>
             <div className="item" style={{gridArea:"box5"}}>
-                <NewGitStats/>
+                
             </div>
         </div>
     )

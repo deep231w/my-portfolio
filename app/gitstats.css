@@ -1,0 +1,15 @@
+.react-github-calendar svg text {
+  display: none !important;
+}
+
+.react-activity-calendar__legend {
+  display: none !important;
+}
+
+.react-activity-calendar__count {
+  display: none !important;
+}
+
+.react-github-calendar rect {
+  pointer-events: none;
+}
