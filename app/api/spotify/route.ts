@@ -12,33 +12,57 @@ export async function GET() {
         const tokenRes= await fetch(TOKEN_ENDPOINT, {
             method:"POST",
             headers:{
-                Authorisation:`Basic ${basic}`,
+                Authorization:`Basic ${basic}`,
                 "Content-Type": "application/x-www-form-urlencoded",
             },
             body:new URLSearchParams({
                 grant_type: "refresh_token",
-                refresh_token: process.env.SPOTIFY_REFRESH_TOKEN!,
+                refresh_token: process.env.SPOTIFY_RTOKEN!,
             })
         })
 
-        const accessToken= await tokenRes.json();
+        const tokenData= await tokenRes.json();
+        
+        console.log("token data - ", tokenData);
+
+        if(!tokenData.access_token){
+            return Response.json({
+                message:"failed to fetch spotify song",
+                status:500
+            })
+        }
+        const access_token= tokenData.access_token;
 
         const nowRes= await fetch(NOW_PLAYING_ENDPOINT, {
             headers:{
-                Authorization: `Bearer ${accessToken}`,
+                Authorization: `Bearer ${access_token}`,
             }
         })
 
         //fallback to recent played song
-        if(nowRes.status === 204){
-            const recentlyPlayed= await fetch(RECENT_ENDPOINT, {
+        if(nowRes.status === 403){
+            const recentRes= await fetch(RECENT_ENDPOINT, {
                 headers:{
-                    Authorization:`Bearer ${accessToken}`,
+                    Authorization:`Bearer ${access_token}`,
                 }
             })
 
-            const recentData=  await  recentlyPlayed.json();
-            const song= recentData.items[0];
+              if (!recentRes.ok) {
+                    const text = await recentRes.text();
+                    console.log("recent error:", text);
+
+                    return Response.json({
+                    isPlaying: false,
+                    message: "No active playback device",
+                    });
+                }
+
+                const recentData = await recentRes.json();
+                const song = recentData.items?.[0];
+
+                if (!song) {
+                    return Response.json({ isPlaying: false });
+                }
 
             return Response.json({
                 isPlaying: false,
@@ -49,15 +73,16 @@ export async function GET() {
             });
         }
 
-        const data= await nowRes.json();
+        // const data= await nowRes.json();
+        console.log("data in api -", nowRes)
         // const data= nowPlayingData.items[0]
-        return Response.json({
-            isPlaying: data.is_playing,
-            title: data.item.name,
-            artist: data.item.artists.map((a: any) => a.name).join(", "),
-            albumImage: data.item.album.images[0].url,
-            songUrl: data.item.external_urls.spotify,
-        });
+        // return Response.json({
+        //     isPlaying: data.is_playing,
+        //     title: data.item.name,
+        //     artist: data.item.artists.map((a: any) => a.name).join(", "),
+        //     albumImage: data.item.album.images[0].url,
+        //     songUrl: data.item.external_urls.spotify,
+        // });
 
     }catch(e){
         console.log("error in get api= ", e);

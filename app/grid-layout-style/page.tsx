@@ -2,6 +2,7 @@ import ExperienceSec from "../components/Experience-sec";
 import GitStats from "../components/GitStats";
 import NewGitStats from "../components/NewGitStats";
 import ProfileSec from "../components/ProfileSec";
+import SongWiget from "../components/SongWiget";
 
 
 export default function GridLayoutStyle(){
@@ -24,7 +25,10 @@ export default function GridLayoutStyle(){
                         set sub2
                     </div> */}
                 </div>
-                <div className="sub-item">sub 2</div>
+                <div className="sub-item">
+                    sub 2
+                    <SongWiget/>
+                </div>
             </div>
 
             <div className="item" style={{gridArea:"box4"}}>item 4</div>
